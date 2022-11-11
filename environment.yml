@@ -17,4 +17,6 @@ dependencies:
   - wheel=0.37.1
   - xz=5.2.6
   - zlib=1.2.13
+  - keplergl=0.3.2
+  
 
