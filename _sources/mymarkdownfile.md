@@ -11,3 +11,5 @@ Try a reference to [](section-label-1)
 ```{tip}
 some text that gives a useful tip to your readers
 ```
+
+here's a link to the website (https://finnoscarmorgan.github.io/Mapping_Workshop/)

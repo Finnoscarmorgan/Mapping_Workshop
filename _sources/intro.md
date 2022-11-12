@@ -1,4 +1,7 @@
-# Welcome to your Jupyter Book
+# Welcome to Mapping Colonial Australian Statistical Data
+
+This provides information on how to do this stuff. 
+
 
 This is a small sample book to give you a feel for how book content is
 structured.
