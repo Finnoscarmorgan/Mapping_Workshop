@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome to Mapping Colonial Australian Statistical Data &#8212; Mapping Historical Data with Kepler</title>
+    <title>Overview &#8212; Mapping Historical Data with Kepler</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Overview" href="overview.html" />
+    <link rel="next" title="Colonial Statistical Data" href="colonial_australian_statistical_data.html" />
+    <link rel="prev" title="Welcome to Mapping Colonial Australian Statistical Data" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -106,26 +107,21 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to Mapping Colonial Australian Statistical Data
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="overview.html">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Overview
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="colonial_australian_statistical_data.html">
    Colonial Statistical Data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="making_maps.html">
-   Making Maps in Kepler.gl
   </a>
  </li>
  <li class="toctree-l1">
@@ -238,7 +234,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Foverview.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -266,7 +262,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/intro.md"
+        <a href="_sources/overview.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -303,23 +299,70 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-are-we-using-kepler-gl">
+   Why are we Using Kepler GL?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-do-we-need">
+   What do we Need?
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Welcome to Mapping Colonial Australian Statistical Data</h1>
+                <h1>Overview</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-are-we-using-kepler-gl">
+   Why are we Using Kepler GL?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-do-we-need">
+   What do we Need?
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -327,10 +370,32 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-mapping-colonial-australian-statistical-data">
-<h1>Welcome to Mapping Colonial Australian Statistical Data<a class="headerlink" href="#welcome-to-mapping-colonial-australian-statistical-data" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h1>
+<p>In this workshop we will do a <strong>few</strong> things:</p>
+<ol class="simple">
+<li><p>Introduce you to colonial statistical datasets</p></li>
+<li><p>Introduce you to (re)constructing historical datasets</p></li>
+<li><p>Use <a class="reference external" href="http://Kepler.GL">Kepler.GL</a> to map our datasets</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">For your reference!</p>
+<p>There are advantages and disadvantages to all kinds of mapping software. Kepler GL is not perfect but it is open-source (so you won’t lose your data behind a pay-wall) and it provides many data visualisation and anlysis functionalities that requires no coding experience.</p>
 </div>
+<section id="why-are-we-using-kepler-gl">
+<h2>Why are we Using Kepler GL?<a class="headerlink" href="#why-are-we-using-kepler-gl" title="Permalink to this headline">#</a></h2>
+<p><img alt="map" src="_images/Carto_Map.png" /></p>
+</section>
+<section id="what-do-we-need">
+<h2>What do we Need?<a class="headerlink" href="#what-do-we-need" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>A Dropbox account (to save and share our maps)</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">What we can’t do today!</p>
+<p>Because Kepler is a client-side web application you cannot save or generate hyper-links to your maps directly from their website. We will be downloading the raw code of our maps so that we can share them with others (today we’ll do this through Dropbox) and so we can re-upload them to the Kepler site to make additional changes.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -360,10 +425,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="overview.html" title="next page">
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Welcome to Mapping Colonial Australian Statistical Data</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="colonial_australian_statistical_data.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Overview</p>
+        <p class="prev-next-title">Colonial Statistical Data</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
