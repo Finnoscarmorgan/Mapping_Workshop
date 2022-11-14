@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Colonial Australian Statistical Data &#8212; Mapping Historical Data with Kepler</title>
+    <title>(Re)Constructing Historical Data: Colonial Australian Bushfires &#8212; Mapping Historical Data with Kepler</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="(Re)Constructing Historical Data: Colonial Australian Bushfires" href="constructing_historical_data.html" />
-    <link rel="prev" title="Welcome to Mapping Colonial Australian Statistical Data" href="intro.html" />
+    <link rel="next" title="Making Maps in Kepler.gl" href="making_maps.html" />
+    <link rel="prev" title="Colonial Australian Statistical Data" href="colonial_australian_statistical_data.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -114,13 +114,13 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="colonial_australian_statistical_data.html">
    Colonial Australian Statistical Data
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="constructing_historical_data.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    (Re)Constructing Historical Data: Colonial Australian Bushfires
   </a>
  </li>
@@ -224,7 +224,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcolonial_australian_statistical_data.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fconstructing_historical_data.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -252,7 +252,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/colonial_australian_statistical_data.md"
+        <a href="_sources/constructing_historical_data.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -312,26 +312,14 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#finding-colonial-statistical-data">
-   1. Finding Colonial Statistical Data
+  <a class="reference internal nav-link" href="#building-historical-bushfire-data-from-trove">
+   Building Historical Bushfire Data from Trove
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#australian-historical-population-statistics">
-     1.1 Australian Historical Population Statistics
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#historical-and-colonial-census-data-archive-hccda-dataverse">
-     2.1 Historical and Colonial Census Data Archive (HCCDA) Dataverse
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#other">
-     3.1 Other
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tools">
+   Tools
+  </a>
  </li>
 </ul>
 
@@ -342,7 +330,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Colonial Australian Statistical Data</h1>
+                <h1>(Re)Constructing Historical Data: Colonial Australian Bushfires</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -353,26 +341,14 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#finding-colonial-statistical-data">
-   1. Finding Colonial Statistical Data
+  <a class="reference internal nav-link" href="#building-historical-bushfire-data-from-trove">
+   Building Historical Bushfire Data from Trove
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#australian-historical-population-statistics">
-     1.1 Australian Historical Population Statistics
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#historical-and-colonial-census-data-archive-hccda-dataverse">
-     2.1 Historical and Colonial Census Data Archive (HCCDA) Dataverse
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#other">
-     3.1 Other
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tools">
+   Tools
+  </a>
  </li>
 </ul>
 
@@ -384,39 +360,47 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="colonial-australian-statistical-data">
-<h1>Colonial Australian Statistical Data<a class="headerlink" href="#colonial-australian-statistical-data" title="Permalink to this headline">#</a></h1>
-<section id="finding-colonial-statistical-data">
-<h2>1. Finding Colonial Statistical Data<a class="headerlink" href="#finding-colonial-statistical-data" title="Permalink to this headline">#</a></h2>
-<p>Blue Books
-Statistics or Statistical Returns, by the 1870s these had become the Statistical Registers.
-In accord with the powers conferred by the constitution of the Commonwealth of Australia, the Census and Statistics Act was passed in 1905. Under the authority of that Act, the Commonwealth Bureau of Census and Statistics was created in 1906
-Although the population and livestock of the colonies were usually counted annually, the countings, or musters, were carried out over a period of weeks and were more a general indication of numbers than an accurate record.</p>
-<section id="australian-historical-population-statistics">
-<h3><a class="reference external" href="https://www.abs.gov.au/AUSSTATS/abs&#64;.nsf/Lookup/3105.0.65.001Main+Features12014?OpenDocument">1.1 Australian Historical Population Statistics</a><a class="headerlink" href="#australian-historical-population-statistics" title="Permalink to this headline">#</a></h3>
-<p>contains a wide range of demographic data in spreadsheet format (Microsoft Excel), going back, where possible, to the beginning of European settlement (1788) of Australia.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="re-constructing-historical-data-colonial-australian-bushfires">
+<h1>(Re)Constructing Historical Data: Colonial Australian Bushfires<a class="headerlink" href="#re-constructing-historical-data-colonial-australian-bushfires" title="Permalink to this headline">#</a></h1>
+<section id="building-historical-bushfire-data-from-trove">
+<h2>Building Historical Bushfire Data from Trove<a class="headerlink" href="#building-historical-bushfire-data-from-trove" title="Permalink to this headline">#</a></h2>
+<figure class="align-center" id="directive-fig-fire-pipeline">
+<a class="reference internal image-reference" href="_images/Bushfire_Map_Pipeline.png"><img alt="_images/Bushfire_Map_Pipeline.png" src="_images/Bushfire_Map_Pipeline.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Link from URL to newspaper article in Trove</span><a class="headerlink" href="#directive-fig-fire-pipeline" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="simple">
+<li><p>Devise search strategy</p></li>
+<li><p>Validate Search Strategy</p></li>
+<li><p>Apply Data Pipe-Line</p></li>
+<li><p>Visualise Results</p></li>
+</ol>
 </section>
-<section id="historical-and-colonial-census-data-archive-hccda-dataverse">
-<h3><a class="reference external" href="https://dataverse.ada.edu.au/dataset.xhtml?persistentId=doi:10.26193/MP6WRS">2.1 Historical and Colonial Census Data Archive (HCCDA) Dataverse</a><a class="headerlink" href="#historical-and-colonial-census-data-archive-hccda-dataverse" title="Permalink to this headline">#</a></h3>
-<p>The Historical Census and Colonial Data Archive (HCCDA) is an archive of Australian colonial census publications and reports covering the period from 1833 to 1901, the year of Australia’s federation. The corpus includes 18,638 pages of text, and approximately 15000 tables, all with full digital images, text conversion and individually identified pages and tables. Please note that the archive contains colonial census reports, but not individual census returns.</p>
-<div class="tip admonition">
-<p class="admonition-title">Using the HCCDA</p>
-<p>The easiest way to veiw the data is to donload the .xhtml files and open them with your preferred web browser.
-Alternatively, the data for all states and years is available in .xtable format (as it was displayed as HTML tables on the legacy website). One suggested way to veiw these files is to convert the files to HTML and view them with a web browser by changing the .xtable extension to .html.</p>
-</div>
-</section>
-<section id="other">
-<h3>3.1 Other<a class="headerlink" href="#other" title="Permalink to this headline">#</a></h3>
+<section id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p><strong>Retrieving Data from Trove:</strong></p>
 <ul class="simple">
-<li><p><strong>Catalogue of Australian Statistical Publications 1804 to 1901</strong>
-<a class="reference external" href="https://www.abs.gov.au/ausstats/abs&#64;.nsf/mf/1115.0">The Catalogue of Australian Statistical Publications, 1804 to 1901</a>, provides an outline of the publications and statistical compilations produced by Australia’s six colonial statistical bureaus.</p></li>
+<li><p><a class="reference external" href="https://glam-workbench.net/trove-harvester/">Trove Harvester</a>
+Queries Trove API and formats results into a csv with relevent meta-data categories. Requires some familiarity with the command line and installation of Python.</p></li>
 </ul>
-<p>The Catalogue accompanies the Colonial Microfiche Series, 1804 to 1901, a collection of over 3000 microfiche which are available at ABS and other libraries. The Colonial Microfiche Series, 1804 to 1901, represents most of the statistics published by the various colonial bureaus and their precursors, and also includes the 1901 Census, the first and only census to be carried out individually by each of the newly federated States.</p>
+</li>
+<li><p><strong>Processing Text to Extract Named Entities:</strong></p>
 <ul class="simple">
-<li><p><strong>A Statistical Account of Australia and New Zealand, 1903-04</strong>
-<a class="reference external" href="https://www.abs.gov.au/AUSSTATS/abs&#64;.nsf/DetailsPage/1398.01903-04?OpenDocument">A Statistical Account of the Seven Colonies of Australasia</a>, was compiled between 1890 and 1904 by the New South Wales Statistician, Timothy A. Coghlan. The eleven volumes bring together statistics for each of the colonies of Australia and New Zealand and are complemented by analysis and commentary. The publication also includes chapters on political divisions, areas and boundaries, climate, parliaments and defence much like in the current Year Book Australia.</p></li>
+<li><p><a class="reference external" href="https://recogito.pelagios.org">Recogito</a>
+Wonderful web application that encompasses an entire geospatial pipe-line. Recogito extracts Named Entities from text, and geo-codes LOCATION entities using a diversity of different Gazeteers. Unfortunately, Gazeteers privelige European historical research and are not much use for the Australian context. Recogito outputs data in handy csv that you can update yourself.</p></li>
+<li><p><a class="reference external" href="https://github.com/Australian-Text-Analytics-Platform/geolocation-tools-workshop">Australian Text Analytics Platform Geolocation Notebook</a>
+A Jupyter notebook that identifies LOCATION  entities in Marcus Clarke’s novel For the Term of his Natural Life. This text can be substituted for any other text by user, however, will require some rudimentary familiarity with Python language, Jupyter Notebooks.</p></li>
 </ul>
-</section>
+</li>
+<li><p><strong>Generating Location Coordinates for Australia</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.tlcmap.org/ghap/">Gazeteer of Historical Australian Placenames</a>
+Most comprehensive online Australian location database. Recently an API was added. Mostly requires you to manually look up locations.</p></li>
+</ul>
+</li>
+</ol>
 </section>
 </section>
 
@@ -447,17 +431,17 @@ Alternatively, the data for all states and years is available in .xtable format 
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="colonial_australian_statistical_data.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Welcome to Mapping Colonial Australian Statistical Data</p>
+            <p class="prev-next-title">Colonial Australian Statistical Data</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="constructing_historical_data.html" title="next page">
+    <a class='right-next' id="next-link" href="making_maps.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">(Re)Constructing Historical Data: Colonial Australian Bushfires</p>
+        <p class="prev-next-title">Making Maps in Kepler.gl</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

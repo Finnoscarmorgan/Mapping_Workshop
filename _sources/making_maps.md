@@ -120,7 +120,7 @@ Kepler.gl is a client-side application, meaning it is running locally on your co
 
 `````
 
-### Saving our Map 
+### 3.1 Saving our Map 
 
 Click on the **Share** icone at the top of the toolbar then click on **Export Map**
 * **Download JSON**: Selecting this option saves bothe the data and the configuration settings of the map. If we wish to make further changes to our map we can load this file directly back into Kepler.gl
@@ -132,7 +132,7 @@ Click on the **Share** icone at the top of the toolbar then click on **Export Ma
 If you are interested in sharing images your map it is advisable to also download a JSON copy of your map so you can reproduce and make any future alterations as needed.  
 `````
 
-### Sharing our Map using Dropbox
+### 3.2 Sharing our Map using Dropbox
 We can use [Dropbox](www.dropbox.com) to temporarily host our map and generate a URL to be shared with others. 
 * Sign in to your Dropbox account on the web
 * In Kepler.gl download a copy of your map as an HTML document
@@ -141,6 +141,27 @@ We can use [Dropbox](www.dropbox.com) to temporarily host our map and generate a
  
 
 ## 4. Making a Network Map
+
+`````{admonition} Starting a New Map
+:class: Tip!
+You may want to delete and re-load the dataset at this stage as generating multiple layers with different functionalities can become very computationallye expensive!  
+`````
+
+The second map we will make is a a network map.  
+
+* Navigate back to the **Layers** tab on the Kepler.gl dashboard. You will notice a number of **Layers** have already been identified by Kepler.gl. 
+* The third layer down should be titled **'point -> newspaper arc'**. Click on the **layer settings** icon (small arrow pointing down).
+* Click on the **eye icon** to show the layer. You should see an image something like the one below.
+
+```{figure} /images/Network.png
+---
+width: 500px
+align: center
+name: directive-Network_fig
+---
+Timeline
+```
+* *Let's tidy up the map and apply a time-series functionality like we did on the previous map*
 
 
 
