@@ -6,8 +6,7 @@ In this workshop we will do a **few** things:
 3. Use Kepler.GL to map our datasets 
 
 
-### Why are we Using Kepler GL?
-Because I lost my data! A Cautionary Tale...
+### Why Kepler.gl?
 
 ![map](Carto_Map.png)
 

@@ -52,7 +52,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Overview" href="overview.html" />
     <link rel="prev" title="(Re)Constructing Historical Data: Colonial Australian Bushfires" href="constructing_historical_data.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -127,11 +126,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Making Maps in Kepler.gl
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="overview.html">
-   Overview
   </a>
  </li>
 </ul>
@@ -343,6 +337,16 @@ title="Print to PDF"
    4. Making a Network Map
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#making-a-cluster-map">
+   5. Making a Cluster Map
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   6. Summary
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -394,6 +398,16 @@ title="Print to PDF"
    4. Making a Network Map
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#making-a-cluster-map">
+   5. Making a Cluster Map
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   6. Summary
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -410,9 +424,9 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>A time-series map</p></li>
 <li><p>A network map</p></li>
-<li><p>A cluster map
-We will use our bushfire dataset to build these maps.</p></li>
+<li><p>A cluster map</p></li>
 </ul>
+<p>We will use our bushfire dataset to build these maps.</p>
 <section id="getting-the-data">
 <h2>1. Getting the data<a class="headerlink" href="#getting-the-data" title="Permalink to this headline">#</a></h2>
 <p>Today we’ll work with the bushfire dataset. This can be downloaded using the following link: <a class="reference external" href="https://drive.google.com/file/d/1F6hGmtRJ9ZTbqq7cgcwbXeUJFNvkU8AG/view?usp=sharing">Link to bushfire dataset</a></p>
@@ -458,7 +472,7 @@ We will use our bushfire dataset to build these maps.</p></li>
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/Data_Table.png"><img alt="map" class="bg-primary mb-1 align-center" src="_images/Data_Table.png" style="width: 500px;" /></a>
 <div class="tip admonition">
 <p class="admonition-title">Data Types</p>
-<p>You will notice that <a class="reference external" href="http://Kepler.gl">Kepler.gl</a> has assigned different colours to the column names.  This is an indication that it is recognising different data-types. Importantly, the ‘Date’ column is green, this indicates that the data is in the correct date format for visualisation.</p>
+<p>You will notice that <a class="reference external" href="http://Kepler.gl">Kepler.gl</a> has assigned different colours to the column names.  This is an indication that it is recognising different data-types. Importantly, the ‘Date’ column is green, this indicates that the data is in the correct date format for visualisation.  <a class="reference external" href="http://Kepler.gl">Kepler.gl</a> is very fussy about the format the format of the time data. Preferably the format should be ‘YYYY-MM-DD 0:00’</p>
 </div>
 <ul class="simple">
 <li><p><strong>Step Three:</strong> If we navigate back to the map interface you will see that <a class="reference external" href="http://Kepler.gl">Kepler.gl</a> has already generated some options for visualisation in the Layers Section.</p>
@@ -474,13 +488,13 @@ We will use our bushfire dataset to build these maps.</p></li>
 <figure class="align-center" id="directive-fig">
 <a class="reference internal image-reference" href="_images/Tooltip_Interaction.png"><img alt="_images/Tooltip_Interaction.png" src="_images/Tooltip_Interaction.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Image of pop-up on map</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Image of pop-up on map</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="_images/Bushfire_Article_Link.png"><img alt="_images/Bushfire_Article_Link.png" src="_images/Bushfire_Article_Link.png" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Link from URL to newspaper article in Trove</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Link from URL to newspaper article in Trove</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -496,7 +510,7 @@ We will use our bushfire dataset to build these maps.</p></li>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="_images/Timeline.png"><img alt="_images/Timeline.png" src="_images/Timeline.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Timeline</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Timeline</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -534,23 +548,39 @@ We will use our bushfire dataset to build these maps.</p></li>
 <h2>4. Making a Network Map<a class="headerlink" href="#making-a-network-map" title="Permalink to this headline">#</a></h2>
 <div class="tip admonition">
 <p class="admonition-title">Starting a New Map</p>
-<p>You may want to delete and re-load the dataset at this stage as generating multiple layers with different functionalities can become very computationallye expensive!</p>
+<p>You may want to delete and re-load the dataset at this stage as generating multiple layers with different functionalities can become very computationally expensive!</p>
 </div>
 <p>The second map we will make is a a network map.</p>
 <ul class="simple">
 <li><p>Navigate back to the <strong>Layers</strong> tab on the <a class="reference external" href="http://Kepler.gl">Kepler.gl</a> dashboard. You will notice a number of <strong>Layers</strong> have already been identified by <a class="reference external" href="http://Kepler.gl">Kepler.gl</a>.</p></li>
 <li><p>The third layer down should be titled <strong>‘point -&gt; newspaper arc’</strong>. Click on the <strong>layer settings</strong> icon (small arrow pointing down).</p></li>
-<li><p>Click on the <strong>eye icon</strong> to show the layer. You should see an image something like the one below.</p></li>
+<li><p>Click on the <strong>eye icon</strong> to show the layer.</p></li>
 </ul>
-<figure class="align-center" id="directive-network-fig">
-<a class="reference internal image-reference" href="_images/Network.png"><img alt="_images/Network.png" src="_images/Network.png" style="width: 500px;" /></a>
+</section>
+<section id="making-a-cluster-map">
+<h2>5. Making a Cluster Map<a class="headerlink" href="#making-a-cluster-map" title="Permalink to this headline">#</a></h2>
+<p>The last map we will make is a cluster map.</p>
+<ul class="simple">
+<li><p>You may wish to begin a fresh map by deleting and re-loading the bushfire dataset. Then click <strong>add layer</strong> from the <strong>Layers</strong> tab. A new layer will appear down the bottom of the tool-bar.</p></li>
+<li><p>Click on <strong>layer setting</strong> (the little downward pointing arrow) and select <strong>Cluster</strong> from the first drop-down menu.</p></li>
+<li><p>Set the <strong>latitude</strong> and <strong>longitude</strong> columns from the dataset as the <strong>lat</strong> and <strong>lon</strong> column inputs for the map. Some cluster should now appear!</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Can’t see your data?</p>
+<p>If you can’t see your data make sure the layer is visible in the map settings. There’s a little icon of an eye that should not be crossed out.</p>
+</div>
+<ul class="simple">
+<li><p>Play around with the radius settings for the clusters. To challenge yourself add a time-series to the map.</p></li>
+</ul>
+<figure class="align-center" id="directive-fig-bushfirecluster">
+<a class="reference internal image-reference" href="_images/Bushfire_Cluster.png"><img alt="_images/Bushfire_Cluster.png" src="_images/Bushfire_Cluster.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Timeline</span><a class="headerlink" href="#directive-network-fig" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Bushfire Cluster Map</span><a class="headerlink" href="#directive-fig-bushfirecluster" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ul class="simple">
-<li><p><em>Let’s tidy up the map and apply a time-series functionality like we did on the previous map</em></p></li>
-</ul>
+</section>
+<section id="summary">
+<h2>6. Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
@@ -587,13 +617,6 @@ We will use our bushfire dataset to build these maps.</p></li>
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">(Re)Constructing Historical Data: Colonial Australian Bushfires</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="overview.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Overview</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

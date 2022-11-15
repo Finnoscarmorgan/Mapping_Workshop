@@ -129,11 +129,6 @@ const thebe_selector_output = ".output, .cell_output"
    Making Maps in Kepler.gl
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="overview.html">
-   Overview
-  </a>
- </li>
 </ul>
 
     </div>
@@ -313,12 +308,17 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#building-historical-bushfire-data-from-trove">
-   Building Historical Bushfire Data from Trove
+   1. Building Historical Bushfire Data from Trove
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tools">
-   Tools
+   2. Tools
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limitations-and-considerations">
+   3. Limitations and Considerations
   </a>
  </li>
 </ul>
@@ -342,12 +342,17 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#building-historical-bushfire-data-from-trove">
-   Building Historical Bushfire Data from Trove
+   1. Building Historical Bushfire Data from Trove
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tools">
-   Tools
+   2. Tools
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limitations-and-considerations">
+   3. Limitations and Considerations
   </a>
  </li>
 </ul>
@@ -363,13 +368,18 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="re-constructing-historical-data-colonial-australian-bushfires">
 <h1>(Re)Constructing Historical Data: Colonial Australian Bushfires<a class="headerlink" href="#re-constructing-historical-data-colonial-australian-bushfires" title="Permalink to this headline">#</a></h1>
 <section id="building-historical-bushfire-data-from-trove">
-<h2>Building Historical Bushfire Data from Trove<a class="headerlink" href="#building-historical-bushfire-data-from-trove" title="Permalink to this headline">#</a></h2>
-<figure class="align-center" id="directive-fig-fire-pipeline">
-<a class="reference internal image-reference" href="_images/Bushfire_Map_Pipeline.png"><img alt="_images/Bushfire_Map_Pipeline.png" src="_images/Bushfire_Map_Pipeline.png" style="width: 500px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Link from URL to newspaper article in Trove</span><a class="headerlink" href="#directive-fig-fire-pipeline" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<h2>1. Building Historical Bushfire Data from Trove<a class="headerlink" href="#building-historical-bushfire-data-from-trove" title="Permalink to this headline">#</a></h2>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/Voronoi_Fire.png"><img alt="map" class="bg-primary mb-1 align-center" src="_images/Voronoi_Fire.png" style="width: 500px;" /></a>
+<p>The historical bushfire dataset, constructed by PhD Candidate Fiannuala Morgan  is derived from over 5000 newspaper
+articles mentioning bushfires harvested from Australian newspapers across the 19th century. Placenames in each article
+that occur within a 200 character count of the word bushfire have been extracted and geo-located using the Australian
+National Survey of Australian Placenames.  This character proximity yields a strong, if unqualified, relationship between
+place and disaster.  Accordingly, this dataset represents places associated with historical bushfires; whether they are
+directly affected or only proximate to the event. Further the temporal element of this dataset represents not the event
+itself, but public response, given that the date ranges are extracted from date of publication.  While acknowledging the
+heavily curated and conditional ontology of this dataset, the demonstrated relationship between place and event establishes
+a viable foundation for comparative analysis with other geospatial datasets.</p>
+<p><strong>Approach</strong></p>
 <ol class="simple">
 <li><p>Devise search strategy</p></li>
 <li><p>Validate Search Strategy</p></li>
@@ -378,7 +388,7 @@ title="Print to PDF"
 </ol>
 </section>
 <section id="tools">
-<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">#</a></h2>
+<h2>2. Tools<a class="headerlink" href="#tools" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p><strong>Retrieving Data from Trove:</strong></p>
 <ul class="simple">
@@ -401,6 +411,14 @@ Most comprehensive online Australian location database. Recently an API was adde
 </ul>
 </li>
 </ol>
+</section>
+<section id="limitations-and-considerations">
+<h2>3. Limitations and Considerations<a class="headerlink" href="#limitations-and-considerations" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>What and who isn’t represented?</p></li>
+<li><p>Whose story is being told?</p></li>
+<li><p>How ‘complete’ is the data?</p></li>
+</ul>
 </section>
 </section>
 

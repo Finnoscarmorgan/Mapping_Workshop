@@ -1,9 +1,10 @@
 # Making Maps in Kepler.gl
 
 Today we'll learn how to build three different kinds of maps that answer different research questions:
-- A time-series map 
-- A network map
-- A cluster map
+* A time-series map 
+* A network map
+* A cluster map
+
 We will use our bushfire dataset to build these maps. 
 
 ## 1. Getting the data
@@ -64,7 +65,7 @@ The first map we wils make is a time-series map, we will also enable some functi
 
 `````{admonition} Data Types
 :class: tip
-You will notice that Kepler.gl has assigned different colours to the column names.  This is an indication that it is recognising different data-types. Importantly, the 'Date' column is green, this indicates that the data is in the correct date format for visualisation.  
+You will notice that Kepler.gl has assigned different colours to the column names.  This is an indication that it is recognising different data-types. Importantly, the 'Date' column is green, this indicates that the data is in the correct date format for visualisation.  Kepler.gl is very fussy about the format the format of the time data. Preferably the format should be 'YYYY-MM-DD 0:00'
 
 `````
 * **Step Three:** If we navigate back to the map interface you will see that Kepler.gl has already generated some options for visualisation in the Layers Section.  
@@ -144,25 +145,40 @@ We can use [Dropbox](www.dropbox.com) to temporarily host our map and generate a
 
 `````{admonition} Starting a New Map
 :class: Tip!
-You may want to delete and re-load the dataset at this stage as generating multiple layers with different functionalities can become very computationallye expensive!  
+You may want to delete and re-load the dataset at this stage as generating multiple layers with different functionalities can become very computationally expensive!  
 `````
 
 The second map we will make is a a network map.  
 
 * Navigate back to the **Layers** tab on the Kepler.gl dashboard. You will notice a number of **Layers** have already been identified by Kepler.gl. 
 * The third layer down should be titled **'point -> newspaper arc'**. Click on the **layer settings** icon (small arrow pointing down).
-* Click on the **eye icon** to show the layer. You should see an image something like the one below.
+* Click on the **eye icon** to show the layer. 
 
-```{figure} /images/Network.png
+## 5. Making a Cluster Map
+
+The last map we will make is a cluster map. 
+
+* You may wish to begin a fresh map by deleting and re-loading the bushfire dataset. Then click **add layer** from the **Layers** tab. A new layer will appear down the bottom of the tool-bar. 
+* Click on **layer setting** (the little downward pointing arrow) and select **Cluster** from the first drop-down menu.
+* Set the **latitude** and **longitude** columns from the dataset as the **lat** and **lon** column inputs for the map. Some cluster should now appear!
+
+`````{admonition} Can't see your data?
+:class: tip
+If you can't see your data make sure the layer is visible in the map settings. There's a little icon of an eye that should not be crossed out. 
+
+`````
+* Play around with the radius settings for the clusters. To challenge yourself add a time-series to the map.
+
+```{figure} /images/Bushfire_Cluster.png
 ---
 width: 500px
 align: center
-name: directive-Network_fig
+name: directive-fig-bushfirecluster
 ---
-Timeline
+Bushfire Cluster Map
 ```
-* *Let's tidy up the map and apply a time-series functionality like we did on the previous map*
 
 
+## 6. Summary
 
 

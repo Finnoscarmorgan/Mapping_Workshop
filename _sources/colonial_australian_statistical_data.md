@@ -23,9 +23,7 @@ Alternatively, the data for all states and years is available in .xtable format 
 
 ### 3.1 Other
 - **Catalogue of Australian Statistical Publications 1804 to 1901**
-[The Catalogue of Australian Statistical Publications, 1804 to 1901](https://www.abs.gov.au/ausstats/abs@.nsf/mf/1115.0), provides an outline of the publications and statistical compilations produced by Australia's six colonial statistical bureaus.
-
-The Catalogue accompanies the Colonial Microfiche Series, 1804 to 1901, a collection of over 3000 microfiche which are available at ABS and other libraries. The Colonial Microfiche Series, 1804 to 1901, represents most of the statistics published by the various colonial bureaus and their precursors, and also includes the 1901 Census, the first and only census to be carried out individually by each of the newly federated States.
+[The Catalogue of Australian Statistical Publications, 1804 to 1901](https://www.abs.gov.au/ausstats/abs@.nsf/mf/1115.0), provides an outline of the publications and statistical compilations produced by Australia's six colonial statistical bureaus. The Catalogue accompanies the Colonial Microfiche Series, 1804 to 1901, a collection of over 3000 microfiche which are available at ABS and other libraries. The Colonial Microfiche Series, 1804 to 1901, represents most of the statistics published by the various colonial bureaus and their precursors, and also includes the 1901 Census, the first and only census to be carried out individually by each of the newly federated States.
 
 - **A Statistical Account of Australia and New Zealand, 1903-04** 
 [A Statistical Account of the Seven Colonies of Australasia](https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1398.01903-04?OpenDocument), was compiled between 1890 and 1904 by the New South Wales Statistician, Timothy A. Coghlan. The eleven volumes bring together statistics for each of the colonies of Australia and New Zealand and are complemented by analysis and commentary. The publication also includes chapters on political divisions, areas and boundaries, climate, parliaments and defence much like in the current Year Book Australia.
