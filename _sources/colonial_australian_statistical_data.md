@@ -1,10 +1,8 @@
 # Colonial Australian Statistical Data
 
 ## 1. Finding Colonial Statistical Data
-Blue Books
-Statistics or Statistical Returns, by the 1870s these had become the Statistical Registers. 
-In accord with the powers conferred by the constitution of the Commonwealth of Australia, the Census and Statistics Act was passed in 1905. Under the authority of that Act, the Commonwealth Bureau of Census and Statistics was created in 1906
-Although the population and livestock of the colonies were usually counted annually, the countings, or musters, were carried out over a period of weeks and were more a general indication of numbers than an accurate record.
+Statistical registers underwent a number of changes across the 19th century. In 1906 the the Commonwealth Bureau of Census and Statistics was created that standardised reporting under the Census and Statistics Act (1905). 
+
 
 ### [1.1 Australian Historical Population Statistics](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/3105.0.65.001Main+Features12014?OpenDocument)
 
