@@ -9,7 +9,7 @@
 :align: center
 ```
 
-The historical bushfire dataset, constructed by PhD Candidate Fiannuala Morgan  is derived from over 5000 newspaper 
+The historical bushfire dataset is derived from over 5000 newspaper 
 articles mentioning bushfires harvested from Australian newspapers across the 19th century. Placenames in each article
 that occur within a 200 character count of the word bushfire have been extracted and geo-located using the Australian 
 National Survey of Australian Placenames.  This character proximity yields a strong, if unqualified, relationship between
