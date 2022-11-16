@@ -11,7 +11,7 @@ We will use our bushfire dataset to build these maps.
 
 Today we'll work with the bushfire dataset. This can be downloaded using the following link: [Link to bushfire dataset](https://drive.google.com/file/d/1F6hGmtRJ9ZTbqq7cgcwbXeUJFNvkU8AG/view?usp=sharing)
 
-* Click on the download icon at the top-righ hand corner of your screen. You should see **'Bushfire_Dataset.csv'** in your downloads folder. 
+* Click on the download icon at the top-right hand corner of your screen. You should see **'Bushfire_Dataset.csv'** in your downloads folder. 
 * Open a web-browser and navigate to [Kepler.gl](https://kepler.gl/demo) 
 * Click **'get started'** and click on the **'browse your files'** link once you see the pop-up below. Navigate to your Downloads folder and upload **'Bushfire_Dataset.csv'** to Kepler.gl.
 
