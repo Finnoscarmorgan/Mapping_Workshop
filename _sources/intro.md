@@ -3,7 +3,13 @@
 In this workshop we will do a **few** things:
 1. Introduce you to colonial statistical datasets
 2. Introduce you to (re)constructing historical datasets
-3. Use Kepler.GL to map our datasets 
+3. Use Kepler.gl to map our datasets 
+
+At the end of this workshop we should be able to:
+1. Understand the value of interactive web maps as a form of geospatial analysis.
+2. Understand the advantages of open-source software for future-proofing our research.
+3. Be able to critically evaluate the difficulties and limitations working with historical data.
+
 
 
 ### Why Kepler.gl?
@@ -16,8 +22,8 @@ There are advantages and disadvantages to all kinds of mapping software. Kepler 
 `````
 
 ### What do we Need?
-- A [Dropbox](www.dropbox.com) account (to save and share our maps)
-- It is also worth signing up for a [Mapbox account](www.mapbox.com), you will require a token in future to continue to host or share your maps. 
+- A [Dropbox](https://www.dropbox.com) account (to save and share our maps)
+- It is also worth signing up for a [Mapbox account](https://www.mapbox.com), you will require a token in future to continue to host or share your maps. 
 
 `````{admonition} What we can't do today!
 :class: tip
