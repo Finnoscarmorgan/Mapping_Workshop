@@ -179,6 +179,4 @@ Bushfire Cluster Map
 ```
 
 
-## 6. Summary
-
 
