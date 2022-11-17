@@ -10,7 +10,7 @@ At the end of this workshop we will be able to:
 2. Understand the advantages of open-source software for future-proofing our research.
 3. Be able to critically evaluate the difficulties and limitations working with historical data.
 
-
+The slides for the presentation can be downloaded [here](https://drive.google.com/file/d/1rgFkxM-fRnHwulmhESAPwbDY9rh_54Mc/view?usp=sharing)
 
 ### Why Kepler.gl?
 `````{admonition} For your reference!
