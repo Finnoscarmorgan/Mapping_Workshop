@@ -1,9 +1,9 @@
 # Making Maps in Kepler.gl
 
 Today we'll learn how to build three different kinds of maps that answer different research questions:
-* A time-series map 
-* A network map
-* A cluster map
+* [A time-series map](https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/Finnoscarmorgan/288fcad69348b8d88d2c78658e21b4e9/raw/298360c54a51c1490c3167aac7f3793bf42db34f/bushfire_map.json) 
+* [A network map](https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/Finnoscarmorgan/773d4c905ba23c66de1f552b039720fc/raw/25b8a51d3def66d2ebd316909492b16f0d394f10/Bushfire_Network.json)
+* [A cluster map](https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/Finnoscarmorgan/2ef85547be348a737d5cd0886851dc08/raw/b9568162beb31521e99e707808e867d9f725f7a1/Cluster_Bushfire.json)
 
 We will use our bushfire dataset to build these maps. 
 

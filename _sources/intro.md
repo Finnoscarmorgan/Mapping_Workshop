@@ -10,7 +10,9 @@ At the end of this workshop we will be able to:
 2. Understand the advantages of open-source software for future-proofing our research.
 3. Be able to critically evaluate the difficulties and limitations working with historical data.
 
-The slides for the presentation can be downloaded [here](https://drive.google.com/file/d/1rgFkxM-fRnHwulmhESAPwbDY9rh_54Mc/view?usp=sharing)
+- The slides for the presentation can be downloaded [here](https://drive.google.com/file/d/1rgFkxM-fRnHwulmhESAPwbDY9rh_54Mc/view?usp=sharing)
+- Link to [Bushfire Rainfall Map](https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/Finnoscarmorgan%20/8665c53afa3c710ecf4a5dd06f8b8da9/raw/f8bc1be126854a903e6e281cc8733dd83183635c/Bushfire_Rainfall_Map.json) 
+
 
 ### Why Kepler.gl?
 `````{admonition} For your reference!
