@@ -36,7 +36,7 @@ You're probably familiar with other mapping interfaces such as Google Maps. Take
 `````
 
 ## 2. Making a Time-Series Map
-The first map we wils make is a time-series map, we will also enable some functionality to improve the legibility of the data. 
+The first map we wils make is a [time-series map](https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/Finnoscarmorgan/288fcad69348b8d88d2c78658e21b4e9/raw/298360c54a51c1490c3167aac7f3793bf42db34f/bushfire_map.json), we will also enable some functionality to improve the legibility of the data. 
 
 * **Step One:** First, let's explore our dataset. 
     * Click on the **Layers icon** in the toolbar (it's the icon with the stacked diamonds). 
@@ -112,7 +112,7 @@ name: directive-fig
 Timeline
 ```
 
-## 3. Saving and Sharing Our Map
+## 3. Saving and Sharing your Map
 
 `````{admonition} Downloading and Sharing your Map
 :class: Warning!
@@ -121,9 +121,9 @@ Kepler.gl is a client-side application, meaning it is running locally on your co
 
 `````
 
-### 3.1 Saving our Map 
+### 3.1 Saving your Map 
 
-Click on the **Share** icone at the top of the toolbar then click on **Export Map**
+Click on the **Share** icon at the top of the toolbar then click on **Export Map**
 * **Download JSON**: Selecting this option saves bothe the data and the configuration settings of the map. If we wish to make further changes to our map we can load this file directly back into Kepler.gl
 * **Download HTML**: Selecting this option converts our map to HTML meaning it can be embedded directly on a website. Once you download the map as HTML you will not be able to make any further changes. 
 * **Export Images**: Kepler also allows you to take high quality pictures of your map using the **Export Image** functionality. 
@@ -133,12 +133,34 @@ Click on the **Share** icone at the top of the toolbar then click on **Export Ma
 If you are interested in sharing images your map it is advisable to also download a JSON copy of your map so you can reproduce and make any future alterations as needed.  
 `````
 
-### 3.2 Sharing our Map using Dropbox
+### 3.2 Sharing your Map using Dropbox
 We can use [Dropbox](www.dropbox.com) to temporarily host our map and generate a URL to be shared with others. 
 * Sign in to your Dropbox account on the web
 * In Kepler.gl download a copy of your map as an HTML document
 * Upload this document to your Dropbox account
 * Click on **'Copy Link'** within your Dropbox account. This should generate a unique URL.
+
+You can share and embed your Kepler map by uploading your json file to [Gist Github](https://gist.github.com) (a repository for saving and sharing snippets of code) and then creating a custom URL to load this file into Kepler.gl. If you wish to embed your map on your own website you can wrap this URL in an iframe using an [i-frame generator](https://www.iframe-generator.com)
+
+### 3.3 Sharing your Map using Github Gist
+`````{admonition} Register for a Github Account
+:class: tip
+To share and embed your map you will need to register for an account with Github.
+
+`````
+1. Register for an account with [Github](https://github.com)
+2. Download your map from Kepler.gl as a .json file.
+3. Upload your .json file at [Github Gist](https://gist.github.com), you can copy and paste your code directly into the text-box.
+4. Label your document with the extension '.json' 
+5. Save the document by clicking the green button "Create Public Gist"
+6. Click on the 'Raw' button, and copy the URL. It should look something like:
+`https://gist.githubusercontent.com/Githubusername/288fcad69348b8d88d2c78658e21b4e9/raw/298360c54a51c1490c3167aac7f3793bf42db34f/filename.json`
+7. You can use this URL, to load your map, its data and the map configurations directly into Kepler. Simply add the the URL above to the URL `https://kepler.gl/#/demo?mapUrl=`
+Your final URL should look something like: 
+`https://kepler.gl/#/demo?mapUrl=https://gist.githubusercontent.com/Githubusername/288fcad69348b8d88d2c78658e21b4e9/raw/298360c54a51c1490c3167aac7f3793bf42db34f/filename.json`
+
+### 3.4 Embedding your Map as an iframe
+1. Using [iframe-generator.com](https://www.iframe-generator.com) you can add the URL you generated above to generate an iframe that can be directly embedded into a website. 
  
 
 ## 4. Making a Network Map
@@ -153,6 +175,13 @@ The second map we will make is a a network map.
 * Navigate back to the **Layers** tab on the Kepler.gl dashboard. You will notice a number of **Layers** have already been identified by Kepler.gl. 
 * The third layer down should be titled **'point -> newspaper arc'**. Click on the **layer settings** icon (small arrow pointing down).
 * Click on the **eye icon** to show the layer. 
+
+```{image} /images/Network_Bushfire.png
+:alt: map
+:class: bg-primary mb-1
+:width: 500px
+:align: center
+```
 
 ## 5. Making a Cluster Map
 

@@ -5,7 +5,7 @@ In this workshop we will do a **few** things:
 2. Introduce you to (re)constructing historical datasets
 3. Use Kepler.gl to map our datasets 
 
-At the end of this workshop we should be able to:
+At the end of this workshop we will be able to:
 1. Understand the value of interactive web maps as a form of geospatial analysis.
 2. Understand the advantages of open-source software for future-proofing our research.
 3. Be able to critically evaluate the difficulties and limitations working with historical data.
@@ -13,9 +13,6 @@ At the end of this workshop we should be able to:
 
 
 ### Why Kepler.gl?
-
-![map](Carto_Map.png)
-
 `````{admonition} For your reference!
 :class: tip
 There are advantages and disadvantages to all kinds of mapping software. Kepler GL is not perfect but it is open-source (so you won't lose your data behind a pay-wall) and it provides many data visualisation and anlysis functionalities that requires no coding experience.
